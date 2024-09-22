@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingStart="@dimen/onboard_titles_horizontal_padding"
+        android:paddingEnd="@dimen/onboard_titles_horizontal_padding"
+        android:textAppearance="?textAppearanceHeadline6"
+        android:text="@string/special_permissions_title"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingStart="@dimen/onboard_titles_horizontal_padding"
+        android:paddingEnd="@dimen/onboard_titles_horizontal_padding"
+        android:ellipsize="end"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="?android:textColorSecondary"
+        android:text="@string/special_permissions_description"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:overScrollMode="@integer/overScrollMode"
+        app:layout_constraintTop_toBottomOf="@+id/clientsLabel"
+        tools:listitem="@layout/item_client"
+        tools:itemCount="3"/>
+
+</LinearLayout>

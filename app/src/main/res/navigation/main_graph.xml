@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.savestatus.wsstatussaver.fragments.HomeFragment"
+        android:label="HomeFragment"/>
+
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.savestatus.wsstatussaver.fragments.SavedFragment"
+        android:label="SavedFragment"/>
+
+    <fragment
+        android:id="@+id/toolsFragment"
+        android:name="com.savestatus.wsstatussaver.fragments.ToolFragment"
+        android:label="ToolsFragment"/>
+
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.savestatus.wsstatussaver.fragments.message.MessageFragment"
+        android:label="MessageFragment"/>
+
+    <fragment
+        android:id="@+id/conversationsFragment"
+        android:name="com.savestatus.wsstatussaver.fragments.messageview.ConversationListFragment"
+        android:label="ConversationListFragment"/>
+
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="com.savestatus.wsstatussaver.fragments.messageview.ConversationDetailFragment"
+        android:label="ConversationDetailFragment">
+        <argument
+            android:name="extra_conversation"
+            app:argType="com.savestatus.wsstatussaver.database.Conversation"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/messageViewTermsFragment"
+        android:name="com.savestatus.wsstatussaver.fragments.messageview.MessageViewTermsFragment"
+        android:label="MessageViewTerms"/>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.savestatus.wsstatussaver.fragments.SettingsFragment"
+        android:label="SettingsFragment"/>
+
+    <fragment
+        android:id="@+id/onboardFragment"
+        android:name="com.savestatus.wsstatussaver.fragments.onboard.OnboardFragment"
+        android:label="OnboardFragment">
+        <argument
+            android:name="isFromSettings"
+            app:argType="boolean"
+            android:defaultValue="false"/>
+    </fragment>
+
+</navigation>

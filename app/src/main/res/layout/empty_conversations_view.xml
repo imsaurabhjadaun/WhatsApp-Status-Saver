@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="28dp"
+    android:paddingStart="@dimen/empty_view_content_padding"
+    android:paddingEnd="@dimen/empty_view_content_padding">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@android:id/text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:textAlignment="center"
+        android:textAppearance="?textAppearanceHeadline6"
+        tools:text="@string/message_view_is_disabled"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@android:id/text2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:textAlignment="center"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="?android:textColorSecondary"
+        android:text="@string/you_wont_be_able_to_see_messages_here"
+        app:layout_constraintTop_toBottomOf="@android:id/text1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="message_view_terms">
+        <item>@string/message_view_term_1</item>
+        <item>@string/message_view_term_2</item>
+        <item>@string/message_view_term_3</item>
+        <item>@string/message_view_term_4</item>
+        <item>@string/message_view_term_5</item>
+    </string-array>
+
+    <string-array name="night_mode_titles">
+        <item>@string/night_mode_yes</item>
+        <item>@string/night_mode_no</item>
+        <item>@string/night_mode_auto</item>
+    </string-array>
+
+    <string-array name="night_mode_values">
+        <item>yes</item>
+        <item>no</item>
+        <item>auto</item>
+    </string-array>
+
+    <string-array name="long_press_action_titles">
+        <item>@string/multi_selection_title</item>
+        <item>@string/preview_action</item>
+        <item>@string/save_action</item>
+        <item>@string/share_action</item>
+        <item>@string/delete_action</item>
+    </string-array>
+
+    <string-array name="long_press_action_values">
+        <item>multi-selection</item>
+        <item>preview</item>
+        <item>save</item>
+        <item>share</item>
+        <item>delete</item>
+    </string-array>
+
+    <string-array name="update_mode_titles">
+        <item>@string/every_day</item>
+        <item>@string/weekly</item>
+        <item>@string/every_fifteen_days</item>
+        <item>@string/monthly</item>
+        <item>@string/never</item>
+    </string-array>
+
+    <string-array name="update_mode_values">
+        <item>every_day</item>
+        <item>weekly</item>
+        <item>every_fifteen_days</item>
+        <item>monthly</item>
+        <item>never</item>
+    </string-array>
+
+    <string-array name="pref_language_entries">
+        <item>@string/system_default</item>
+        <item>Belarusian</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>Spanish (Spain)</item>
+        <item>Spanish (Latin America)</item>
+        <item>French</item>
+        <item>Hindi</item>
+        <item>Italian</item>
+        <item>Kazakh</item>
+        <item>Portuguese (Brazil)</item>
+        <item>Russian</item>
+        <item>Tamil</item>
+    </string-array>
+
+    <string-array name="pref_language_values">
+        <item>auto</item>
+        <item>be</item>
+        <item>nl-NL</item>
+        <item>en</item>
+        <item>es</item>
+        <item>es-419</item>
+        <item>fr</item>
+        <item>hi</item>
+        <item>it</item>
+        <item>kk</item>
+        <item>pt-BR</item>
+        <item>ru</item>
+        <item>ta</item>
+    </string-array>
+
+</resources>

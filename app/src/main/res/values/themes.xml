@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StatusSaver" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:fontFamily">@font/manrope</item>
+        <item name="fontFamily">@font/manrope</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryFixed">@color/primary_color_fixed</item>
+        <item name="colorOnPrimaryFixed">@color/primary_color_fixed_on</item>
+        <item name="colorSecondary">@color/primary_color</item>
+        <item name="colorOnPrimary">@color/md_white_1000</item>
+        <item name="colorOnSecondary">@color/md_white_1000</item>
+        <item name="colorSurface">@color/surface_color_adaptive</item>
+        <item name="colorSurfaceContainer">@color/container_color_adaptive</item>
+        <item name="colorSecondaryContainer">@color/secondary_container_color</item>
+        <item name="elevationOverlayColor">@color/md_grey_500</item>
+        <item name="android:windowBackground">?colorSurface</item>
+        <item name="android:colorBackground">?colorSurface</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="defaultIconColor">?colorControlNormal</item>
+        <item name="defaultIconBackgroundColor">?colorSurfaceContainer</item>
+        <item name="rectSelector">@drawable/rect_selector</item>
+        <item name="roundSelector">@drawable/round_selector</item>
+        <item name="popupMenuBackground">@drawable/popupmenu_background</item>
+        <item name="homeAsUpIndicator">@drawable/ic_keyboard_backspace_24dp</item>
+        <item name="toolbarPopupTheme">@style/ToolbarPopupTheme</item>
+        <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+        <item name="materialAlertDialogTheme">@style/MaterialAlertDialogTheme</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+        <item name="bottomNavigationStyle">@style/BottomNavigationStyle</item>
+        <item name="materialButtonStyle">@style/MaterialButtonStyle</item>
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
+        <item name="preferenceCategoryStyle">@style/MaterialPreferenceCategory</item>
+        <item name="collapsingToolbarLayoutLargeStyle">@style/CollapsingToolbarLargeStyle</item>
+    </style>
+
+    <style name="Theme.StatusSaver" parent="Base.Theme.StatusSaver"/>
+
+    <style name="Theme.StatusSaver.Black">
+        <item name="colorSurface">@color/surface_color_black</item>
+        <item name="colorSurfaceContainer">@color/container_color_black</item>
+        <item name="android:windowBackground">?colorSurface</item>
+        <item name="elevationOverlayAccentColor">@color/md_black_1000</item>
+        <item name="dividerColor">@color/divider_color_black</item>
+        <item name="alertDialogTheme">@style/AlertDialogTheme.Black</item>
+        <item name="materialAlertDialogTheme">@style/MaterialAlertDialogTheme.Black</item>
+    </style>
+
+    <style name="Theme.StatusSaver.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:statusBarColor">@color/surface_color_adaptive</item>
+        <item name="android:navigationBarColor">@color/surface_color_adaptive</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">?isLightTheme</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">?isLightTheme</item>
+    </style>
+
+    <style name="ToolbarPopupTheme" parent="ThemeOverlay.Material3.Light"/>
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorBackgroundFloating">@color/container_color_adaptive</item>
+        <item name="android:colorBackground">?colorBackgroundFloating</item>
+        <item name="dialogCornerRadius">@dimen/m3_dialog_corner_radius</item>
+    </style>
+
+    <style name="MaterialAlertDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurfaceContainerHigh">@color/container_color_adaptive</item>
+    </style>
+
+    <style name="MaterialPreferenceCategory" parent="Preference.Category.Material">
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">false</item>
+    </style>
+
+</resources>

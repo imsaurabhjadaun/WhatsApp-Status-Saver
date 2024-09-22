@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Launcher Icon -->
+    <color name="ic_launcher_background">@color/md_white_1000</color>
+    <bool name="allowBackup">false</bool>
+</resources>
